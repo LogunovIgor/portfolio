@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -83,13 +87,131 @@ body {
 .content {
     background-color: #dedede;
     width: 100%;
-    height: 800px;
+    height: 100vh;
 }
 
-.content-header {
-    background-color: #000000;
+.first-page-content {
+    height: 100vh;
+}
+
+.first-page-content-header {
     width: 100%;
-    height: 50px;
-    position: fixed;
-    z-index: 111;
+    height: 8%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+}
+
+.first-page-nav {
+    padding-right: 15px;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+}
+
+.first-page-nav-item {
+    margin-right: 25px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.first-page-nav-item-image {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.first-page-main {
+    width: 100%;
+    height: 92%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-page-work-content {
+    width: 600px;
+    height: 450px;
+    background-color: aqua;
+    background-size:cover;
+    background-position: center;
+    margin: 25px;
+    border-radius: 25px 0 35px 0;
+    transition: transform 0.5s;
+    transform: scale(1);
+}
+
+.first-page-work-content:hover {
+    transform: scale(1.1);
+}
+.first-page-work-content:hover .first-page-work-content-hidden {
+    visibility: visible;
+}
+
+.first-page-work-content-hidden {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 25px 0 35px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.first-page-work-content-hidden a {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing:5px;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+
+@media(max-width: 500px) {
+    .first-page-main {
+        display: block;
+    }
+
+    .welcome-header {
+        font-size: 12px;
+    }
+
+    .welcome-main {
+        font-size: 16px;
+        letter-spacing: normal;
+    }
+
+    .first-page-content-header {
+        justify-content: center;
+    }
+
+    .first-page-work-content {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .first-page-work-content-hidden {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .first-page-work-content:hover {
+        transform: none;
+    }
+
+    .first-page-work-content {
+        width: 100%;
+    }
 }
