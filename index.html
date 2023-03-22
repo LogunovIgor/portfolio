@@ -4,64 +4,119 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио Web-разработчика | Логунов Игорь</title>
 </head>
 
 <body>
-    <header class="first-slide">
-        <div class="first-slide-block">
-            <div class="first-slide-block-welcome">
-                <p class="welcome-header">Здравствуйте! Меня зовут Игорь и я</p>
-                <p class="welcome-main">Web-Developer</p>
+    <header class="logo">
+        <div class="logo-transparrent-layer">
+            <div class="logo-body">
+                <div class="logo-body-content">
+                    <p class="logo-body-content-welcome">Здравствуйте! Меня зовут Игорь и я</p>
+                    <p class="logo-body-content-profession">Web-Developer</p>
+                </div>
             </div>
-            <div class="first-slide-block-footer">
-                <div class="first-slide-block-footer-image">
-                    <a class="first-slide-block-footer-href" href="#content"></a>
+            <div class="logo-footer">
+                <div class="logo-footer-down-button">
+                    <a class="logo-footer-down-href" href="#works"></a>
                 </div>
             </div>
         </div>
     </header>
-    <main class="content" id="content">
-        <div class="first-page-content">
-            <div class="first-page-content-header">
-                <div class="first-page-nav">
-                    <a class="first-page-nav-item" href="#">
-                        <img class="first-page-nav-item-image" src="./images/works.png" />
+
+    <main>
+        <article class="screen-content" id="works">
+            <nav class="screen-content-header">
+                <section class="navigation">
+                    <a class="navigation-item" href="#works">
+                        <img class="navigation-item-image" src="./images/works.png" />
                         Мои работы
                     </a>
-                    <a class="first-page-nav-item" href="#">
-                        <img class="first-page-nav-item-image" src="./images/certificates.png" />
+                    <a class="navigation-item" href="#certificates">
+                        <img class="navigation-item-image" src="./images/certificates.png" />
                         Сертификаты
                     </a>
-                    <a class="first-page-nav-item" href="#">
-                        <img class="first-page-nav-item-image" src="./images/skills.png" />
+                    <a class="navigation-item" href="#skills">
+                        <img class="navigation-item-image" src="./images/skills.png" />
                         Навыки
                     </a>
-                    <a class="first-page-nav-item" href="#">
-                        <img class="first-page-nav-item-image" src="./images/contacts.png" />
+                    <a class="navigation-item" href="#contacts">
+                        <img class="navigation-item-image" src="./images/contacts.png" />
                         Контакты
                     </a>
-                </div>
-            </div>
-            <div class="first-page-main">
-                <div class="first-page-work-content" style="background-image: url('./images/project-1.png');">
-                    <div class="first-page-work-content-hidden">
-                        <a href="https://logunovigor.github.io/slider/">Презентация автомобилей</a>
-                        <a href="https://github.com/LogunovIgor/slider">Смотреть код</a>
+                </section>
+            </nav>
+            <section class="screen-content-body-limited gray-content">
+                <section class="screen-content-body-header">
+                    <h1 class="screen-content-body-header-text">Мои работы</h1>
+                </section>
+                <section class="screen-content-body-underline"></section>
+                <section class="screen-content-body-body">
+                    <div class="work-item" style="background-image: url('./images/project-1.png');">
+                        <div class="work-item-hidden">
+                            <a class="work-item-hidden-href" href="https://logunovigor.github.io/slider/"
+                                target="_blank">Презентация
+                                автомобилей</a>
+                            <a class="work-item-hidden-href" href="https://github.com/LogunovIgor/slider"
+                                target="_blank">Смотреть код</a>
+                        </div>
                     </div>
-                </div>
-                <div class="first-page-work-content" style="background-image: url('./images/project-2.png');">
-                    <div class="first-page-work-content-hidden">
-                        <a href="https://logunovigor.github.io/moviewatch/">Онлайн кинотеатр</a>
-                        <a href="https://github.com/LogunovIgor/moviewatch">Смотреть код</a>
+                    <div class="work-item" style="background-image: url('./images/project-2.png');">
+                        <div class="work-item-hidden">
+                            <a class="work-item-hidden-href" href="https://logunovigor.github.io/moviewatch/"
+                                target="_blank">Онлайн кинотеатр</a>
+                            <a class="work-item-hidden-href" href="https://github.com/LogunovIgor/moviewatch"
+                                target="_blank">Смотреть код</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                </section>
+            </section>
+        </article>
+        <article class="screen-content" id="certificates">
+            <section class="screen-content-body-full">
+                <section class="screen-content-body-header">
+                    <h1 class="screen-content-body-header-text">Сертификаты</h1>
+                </section>
+                <section class="screen-content-body-underline"></section>
+                <section class="screen-content-body-body">
+                    <div class="certificate-item" style="background-image: url('./images/certificates/nordic.jpg');">
+                        <div class="cerificate-item-released-text"><span>Nordic IT School</span></div>
+                    </div>
+                    <div class="certificate-item"
+                        style="background-image: url('./images/certificates/specialist.jpg');">
+                        <div class="cerificate-item-released-text"><span>Центр компьютерного обучения
+                                «Специалист»</span></div>
+                    </div>
+                    <div class="certificate-item"
+                        style="background-image: url('./images/certificates/stepik-java.jpg');">
+                        <div class="cerificate-item-released-text"><span>Российская образовательная платформа
+                                «Stepik»</span></div>
+                    </div>
+                </section>
+            </section>
+        </article>
+        <article class="screen-content gray-content" id="skills">
+            <section class="screen-content-body-full">
+                <section class="screen-content-body-header">
+                    <h1 class="screen-content-body-header-text">Навыки</h1>
+                </section>
+                <section class="screen-content-body-underline"></section>
+                <section class="screen-content-body-body skill-items-content">
+                    <div class="skill-item" style="background-image: url('./images/skills/html.png');">
+                    </div>
+                    <div class="skill-item" style="background-image: url('./images/skills/css.png');">
+                    </div>
+                    <div class="skill-item" style="background-image: url('./images/skills/aspnet.png');">
+                    </div>
+                    <div class="skill-item" style="background-image: url('./images/skills/csharp.png');">
+                    </div>
+                    <div class="skill-item" style="background-image: url('./images/skills/sql.png');">
+                    </div>
+                </section>
+            </section>
+        </article>
     </main>
-    <footer>
-
-    </footer>
 </body>
 
 </html>
