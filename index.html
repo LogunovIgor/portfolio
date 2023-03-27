@@ -41,11 +41,19 @@
                         <img class="navigation-item-image" src="./images/skills.png" />
                         Навыки
                     </a>
-                    <a class="navigation-item" href="#contacts">
-                        <img class="navigation-item-image" src="./images/contacts.png" />
-                        Контакты
-                    </a>
                 </section>
+            </nav>
+            <nav class="overlay-menu">
+                <div class="overlay-menu-actions">
+                    <span class="overlay-menu-open-action" onclick="showOverlayMenu()">&#9776;</span>
+                    <span class="overlay-menu-close-action" onclick="hideOverlayMenu()">&#65794;</span>
+                </div>
+                <div class="overlay-menu-content">
+                    <a class="overlay-menu-content-item" href="#" onclick="hideOverlayMenu()">Главная</a>
+                    <a class="overlay-menu-content-item" href="#works" onclick="hideOverlayMenu()">Мои работы</a>
+                    <a class="overlay-menu-content-item" href="#certificates" onclick="hideOverlayMenu()">Сертификаты</a>
+                    <a class="overlay-menu-content-item" href="#skills" onclick="hideOverlayMenu()">Навыки</a>
+                </div>
             </nav>
             <section class="screen-content-body-limited gray-content">
                 <section class="screen-content-body-header">
@@ -77,21 +85,21 @@
             <section class="screen-content-body-full">
                 <section class="screen-content-body-header">
                     <h1 class="screen-content-body-header-text">Сертификаты</h1>
+                    <section class="screen-content-body-underline"></section>
                 </section>
-                <section class="screen-content-body-underline"></section>
                 <section class="screen-content-body-body">
                     <div class="certificate-item" style="background-image: url('./images/certificates/nordic.jpg');">
-                        <div class="cerificate-item-released-text"><span>Nordic IT School</span></div>
+                        <div class="cerificate-item-released-text"><a href="./images/certificates/nordic.jpg" class="certificate-href" target="_blank">Nordic IT School</a></div>
                     </div>
                     <div class="certificate-item"
                         style="background-image: url('./images/certificates/specialist.jpg');">
-                        <div class="cerificate-item-released-text"><span>Центр компьютерного обучения
-                                «Специалист»</span></div>
+                        <div class="cerificate-item-released-text"><a href="./images/certificates/specialist.jpg" class="certificate-href" target="_blank">Центр компьютерного обучения
+                                «Специалист»</a></div>
                     </div>
                     <div class="certificate-item"
                         style="background-image: url('./images/certificates/stepik-java.jpg');">
-                        <div class="cerificate-item-released-text"><span>Российская образовательная платформа
-                                «Stepik»</span></div>
+                        <div class="cerificate-item-released-text"><a href="./images/certificates/stepik-java.jpg" class="certificate-href" target="_blank">Российская образовательная платформа
+                                «Stepik»</a></div>
                     </div>
                 </section>
             </section>
@@ -100,8 +108,8 @@
             <section class="screen-content-body-full">
                 <section class="screen-content-body-header">
                     <h1 class="screen-content-body-header-text">Навыки</h1>
+                    <section class="screen-content-body-underline"></section>
                 </section>
-                <section class="screen-content-body-underline"></section>
                 <section class="screen-content-body-body skill-items-content">
                     <div class="skill-item" style="background-image: url('./images/skills/html.png');">
                     </div>
@@ -117,6 +125,20 @@
             </section>
         </article>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        function hideOverlayMenu() {
+            $('.overlay-menu-close-action').css('display', 'none');
+            $('.overlay-menu-open-action').css('display', 'block');
+            $('.overlay-menu-content').css('display', 'none');
+        }
+
+        function showOverlayMenu() {
+            $('.overlay-menu-close-action').css('display', 'block');
+            $('.overlay-menu-open-action').css('display', 'none');
+            $('.overlay-menu-content').css('display', 'flex');
+        }
+    </script>
 </body>
 
 </html>
