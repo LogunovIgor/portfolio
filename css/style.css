@@ -287,8 +287,8 @@ body {
     display: none;
     color: #ffffff;
     width: 100vw;
-    background-color: #000000;
-    opacity: 0.9;
+    background-color: #292929;
+    opacity: 0.965;
     top: 0px;
     z-index: 1;
 }
